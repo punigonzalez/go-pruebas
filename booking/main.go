@@ -5,13 +5,18 @@ import (
 	"strings"
 )
 
+func imprimirNombres(nombres ...string) {
+	for _, nombre := range nombres {
+		fmt.Println(nombre)
+	}
+}
+
 func main() {
 
 	const conferenceTickets int = 50
 	var remainingTickets uint = 50
 	conferenceName := "Go Conference"
 	bookings := []string{}
-	
 
 	fmt.Printf("Welcome to %v booking application.\nWe have total of %v tickets and %v are still available.\nGet your tickets here to attend\n", conferenceName, conferenceTickets, remainingTickets)
 
@@ -47,11 +52,9 @@ func main() {
 			var names = strings.Fields(booking)
 			firstNames = append(firstNames, names[0])
 		}
-		fmt.Printf("The first names %v\n", firstNames)
+		fmt.Printf("The first names %v,\n", firstNames)
 
 		fmt.Println(bookings)
 
 	}
 }
-
-
