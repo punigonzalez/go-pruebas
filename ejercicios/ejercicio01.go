@@ -18,4 +18,5 @@ func CompararConCien(valor string) string {
 		fmt.Println("El valor es menor o igual a 100")
 		return "El valor es menor o igual a 100"
 	}
+
 }
